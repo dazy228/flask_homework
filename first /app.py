@@ -51,7 +51,7 @@ def get_mean():
     df['Weight (kilograms)'] = df[' "Weight(Pounds)"'] * 0.45359237
     mean_height = df['Height (centimeters)'].mean()
     mean_weight = df['Weight (kilograms)'].mean()
-    return f'<h3>Средний рост:</h3> {mean_height} \n <h1>Средний вес:</h1> {mean_weight}'
+    return f'<h3>Средний рост:</h3> {mean_height} \n <h3>Средний вес:</h3> {mean_weight}'
 
 
 @app.route('/space/')
