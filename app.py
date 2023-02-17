@@ -1,16 +1,14 @@
-import requests
-
-from flask import Flask, request
-from faker import Faker
 import pandas as pd
-
+import requests
+from faker import Faker
+from flask import Flask
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return "<h2>Hello, World!</h3>"
+    return "<h2>Hello, World!</h2>"
 
 
 @app.route('/requirements/')
